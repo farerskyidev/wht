@@ -1,0 +1,29 @@
+@use "sass:math";
+
+@import "mixins/functions";
+@import "mixins/mixins"; 
+@import "fonts";   
+
+
+// Base custom typography style set
+$font-family-ibm-plex-sans: 'IBMPlexSans';
+
+
+// Base typography style
+$base-font-size: 16px; // Sets the base font size
+$base-line-height: 1.8; // Sets the base line height
+$base-font-family: $font-family-ibm-plex-sans; // Sets the base font family  
+
+
+$black-10: rgba(0, 0, 0, 0.1);  
+$black-20: rgba(0, 0, 0, 0.2); 
+$black-60: rgba(0, 0, 0, 0.6); 
+
+// Colors
+$brand-primary: #000000;
+$white: #ffffff;
+$second-white: #F7F4F0; 
+$purple: #5B10FF;
+$green: #02b31b;
+$orange: #fb9c3a; 
+$dark-blue: #080820;

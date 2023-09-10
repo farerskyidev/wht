@@ -1,0 +1,71 @@
+@import "variables";
+
+%h {
+    clear: both;
+    margin: 0 0 15px;
+    //padding: 20px 0 0;
+    line-height: 1.25;
+    font-weight: 700;
+    font-family: $font-family-ibm-plex-sans;
+    &:first-child { 
+        padding-top: 0; 
+    }
+    span {
+        color: $purple;
+        border: 2px solid;
+        border-radius: 5px;
+    }
+}
+
+%h1 {
+    font-size: rem(60);
+    font-weight: 600;
+    line-height: 68.4px;
+}
+%h2 {
+    font-size: rem(80);
+    font-weight: 400;
+    @media (max-width: 991px) {
+        font-size: rem(60);
+    }
+    @media (max-width: 575px) {
+        font-size: rem(50);
+    }
+}
+%h3 {
+
+}
+%h4 {
+    font-size: rem(40);
+    font-weight: 400;
+    line-height: rem(60);
+    @media (max-width: 991px) {
+        font-size: rem(32);
+    }
+    @media (max-width: 575px) {
+        font-size: rem(26);
+        line-height: rem(48);
+    }
+  
+}
+%h5 {
+    font-size: rem(24);
+    line-height: rem(28);
+    font-weight: 500;
+}
+%h6 {
+    font-size: rem(20);
+    font-weight: 600;
+}
+
+%size18 {
+    font-size: rem(18); 
+}
+
+%size14 {
+    font-size: rem(14);
+}
+
+%size12 {
+    font-size: rem(12); 
+}

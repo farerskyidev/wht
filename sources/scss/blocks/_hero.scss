@@ -1,0 +1,76 @@
+.hero {
+    background-color: $purple;
+    height: 900px;
+    @media (max-width: 992px) {
+        height: 750px; 
+    }
+    @media (max-width: 575px) {
+        height: 600px;  
+    }
+    .container {
+        height: 100%;
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+    }
+    &__logo {
+        margin: auto;
+        @media (max-width: 992px) {
+            max-width: 300px;   
+        }
+        @media (max-width: 575px) {
+            max-width: 250px;   
+        }   
+    }
+    &__wrap {
+        height: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-top: 60px;
+    }
+    &__text {
+        margin-bottom: 0;
+        font-weight: 700;
+        @media (max-width: 992px) {
+            max-width: 220px;    
+        }
+        @media (max-width: 575px) { 
+            max-width: 100%;
+            margin-bottom: 20px;     
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        position: relative;
+        p {
+            color: $white;
+        }
+        .down {
+            position: absolute;
+            top: calc( 50% - 9px);
+            left: calc( 50% - 9px);
+            @media (max-width: 575px) { 
+                top: calc(100% + 30px);   
+            }
+        }
+        .social__icon {
+            opacity: 0.6;
+            transition: all 0.3s;
+            &:hover,
+            &:focus,
+            &:active {
+                opacity: 1;
+            }
+        }
+        @media (max-width: 575px) { 
+            display: block;   
+            margin-bottom: 80px;  
+        }
+    }
+}
+
+
