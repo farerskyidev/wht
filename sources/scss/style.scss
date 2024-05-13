@@ -1,5 +1,3 @@
-// Vendor
-@import "./../node_modules/swiper/swiper";
 
 // Bootstrap
 @import "bootstrap";
@@ -14,13 +12,10 @@
 @import "fonts";
 @import "header";
 @import "general";
-@import "footer";
 
 
 // Blocks
-@import "blocks/hero";
-@import "blocks/form";
-@import "blocks/join-us";
-@import "blocks/cake";
-@import "blocks/finance";
-@import "blocks/road-to-success";
+
+@import "blocks/banner";
+@import "blocks/about_us";
+@import "blocks/our_properties";  

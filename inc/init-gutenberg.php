@@ -10,19 +10,6 @@ if (!defined('ABSPATH')) {
  * @param $post
  * @return array
  */
-function wht_block_category($categories, $post): array
-{
-    return array_merge(
-        $categories,
-        array(
-            array(
-                'slug'  => 'lexitas-category',
-                'title' => __('Lexitas Blocks', V_PREFIX)
-            )
-        )
-    );
-}
-add_filter('block_categories', 'lex_block_category', 10, 2);
 
 
 /**
@@ -33,12 +20,9 @@ add_filter('block_categories', 'lex_block_category', 10, 2);
 function wht_data_list_files(): array
 {
     $files = array(
-        'hero',
-        'form',
-        'join-us',
-        'cake', 
-        'finance', 
-        'road-to-success', 
+        'about_us',
+        'our_properties',
+        'banner',
     );
 
     $data_list = array();

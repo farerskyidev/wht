@@ -1,5 +1,7 @@
 @import "variables";
-
+html {
+    cursor: url('../../assets/img/mouse-pointer.svg'), auto;
+}
 *,
 *::before,
 *::after {
@@ -18,12 +20,13 @@ body {
     line-height: $base-line-height;
     font-weight: 400;
     color: #000;
-    background-color: #fff;
+    background-color: $white-smoke-color;  
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
 }
 
 hr {
@@ -75,6 +78,7 @@ p {
         margin-bottom: 0;
     }
 }
+
 
 abbr[title],
 abbr[data-bs-original-title] {
@@ -487,3 +491,4 @@ input {
         outline: 0;
     }
 }
+

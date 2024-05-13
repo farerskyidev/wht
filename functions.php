@@ -28,8 +28,6 @@ function lex_after_theme_setup() {
     register_nav_menus(
         array(
             'main-menu' => esc_html__( 'Main menu', 'lex' ),
-            'footer-menu' => esc_html__( 'Footer menu', 'lex' ),
-            'copyright-menu' => esc_html__( 'Copyright menu', 'lex' ),
         )
     );
 

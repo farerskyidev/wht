@@ -1,4 +1,3 @@
-import "./app/gutenberg";
 import Swiper from "swiper/swiper-bundle";
 import { gsap } from "./app/gsap/gsap";
 import { ScrollTrigger } from "./app/gsap/ScrollTrigger";
@@ -20,7 +19,7 @@ gsap.registerPlugin(ScrollTrigger);
     });
 
     // Mobile header
- 
+
     $(".header__burger").on('click', function () { 
         if ($(this).hasClass('active')) { 
             $('.header').removeClass('active'); 
@@ -33,6 +32,39 @@ gsap.registerPlugin(ScrollTrigger);
         } 
     });
 
-})(jQuery);
+    $(document).ready(function(){
 
+        if ($(window).width() <= 992) {
+            $('.our_properties__wrap > .row:nth-child(1) .our_properties__image').prepend($('.our_properties__wrap h2'));
+        }
+
+        // Select2 initialization
+        $('.nav-select').select2(); 
+
+        // Pulse button banner
+        $('.banner__vert-line-white').on('click', function() {
+            var $nextBlock = $('.banner').next();
+
+            if ($nextBlock.length) {
+                $('html, body').animate({
+                    scrollTop: $nextBlock.offset().top
+                }, 1000);
+            }
+        }); 
+
+        function startPulseAnimation() {
+            $('.banner__vert-line-white').addClass('pulse');
+            $('.our_properties__vert-line').addClass('pulse');
+        }
+        startPulseAnimation();
+
+        $('.banner__vert-line-white').on('click', function(event) {
+            event.stopPropagation();
+        });
+        
+    });
+    $(".banner-slide-items").clone().appendTo('.banner-slide-content');
+
+
+})(jQuery);
 

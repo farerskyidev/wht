@@ -8,7 +8,7 @@ if( ! defined( 'ABSPATH' ) ) exit;
 if( !class_exists('fw_acf_gf_field') ) :
 
 
-class fw_acf_gf_field extends acf_field { 
+class fw_acf_gf_field extends acf_field {  
 	
 	
 	/*

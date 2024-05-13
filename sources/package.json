@@ -53,11 +53,15 @@
     "bootstrap": "^4.6.1",
     "lazysizes": "latest",
     "mq-breakpoints": "latest",
+    "node-sass": "^9.0.0",
     "remodal": "latest",
     "selectboxit": "latest",
     "sharer.js": "latest",
     "sp-form-data": "latest",
     "swiper": "latest",
     "trim-words": "latest"
+  },
+  "scripts": {
+    "start": "gulp"
   }
 }
